@@ -21,11 +21,11 @@ MF3='Alta':'gaussmf',[2.5 30]
 
 [Input2]
 Name='extracurriculari'
-Range=[0 1]
+Range=[0 10]
 NumMFs=3
-MF1='Poche':'trimf',[-0.416666666666667 0 0.416666666666667]
-MF2='Medie':'trimf',[0.0833333333333333 0.5 0.916666666666667]
-MF3='Tante':'trimf',[0.583333333333333 1 1.41666666666667]
+MF1='Poche':'trapmf',[0 0 2 4]
+MF2='Medie':'trapmf',[2 4 6 8]
+MF3='Tante':'trapmf',[6 8 10 10]
 
 [Output1]
 Name='Punteggio'
